@@ -1,0 +1,10 @@
+b=int(input())
+t=int(input())
+left=((b+t)*70)/2
+right=11200-((b+t)*70)/2
+if left==5600:
+    print("0")
+elif left>right and left>5600:
+    print("1")
+elif left<right and right>5600:
+    print("2")
