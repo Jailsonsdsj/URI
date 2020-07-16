@@ -1,0 +1,25 @@
+while True:
+    try:
+        n,m = map(int, input().split()) #lê dois números sem precisar de duas entradas (separados por espaço)
+        aux=n
+        if n==0:
+            n=1
+        elif n>20:
+            break;
+        else:
+            while aux!=1:
+                n = n * (aux-1)
+                aux -= 1
+        aux=m
+        if m==0:
+            m=1
+        elif m>20:
+            break;
+        else:
+            while aux!=1:
+                m= m * (aux-1)
+                aux -= 1
+        tot=n+m
+        print(tot)
+    except EOFError:
+        break
