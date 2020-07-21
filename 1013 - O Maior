@@ -1,0 +1,3 @@
+n1, n2, n3 = map(int, input().split())
+bigger=(n1+n2+abs(n1-n2))/2
+print("%i eh o maior"%n3 if n3>bigger else "%i eh o maior"%bigger)
