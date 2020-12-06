@@ -1,0 +1,23 @@
+hh=0;mm=0;ss=0
+s=int(input())
+while (s!=0):
+  if (ss<=59):
+    ss=ss+1
+    s=s-1
+  elif (ss>=60) and (mm<60):
+    mm=mm+1
+    ss=0
+  elif (ss>=60) and (mm>=59):
+    hh=hh+1
+    mm=0
+print(f'{hh}:{mm}:{ss}')  
+
+---------------------------
+#ANOTHER WAY
+
+N = int(input())
+hours = int(N / 3600)
+minutes = int((N % 3600) / 60)
+seconds =  (N % 3600 % 60)
+
+print("{}:{}:{}".format(hours, minutes, seconds))
